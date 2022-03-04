@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: "Courier New", Courier, monospace;
+    color: #333;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calc {
+    width: 40rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+form, form > * /*selects all elements (*), where (>) the parent is a form, so everything inside our form(form)*/ {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input, select {
+    font-size: 1.6rem;
+    padding: 7px;
+    width: 20rem;
+    text-align: right;
+    border-radius: 3px;
+    border: 1px solid #333;
+    color: #333;
+}
+
+.btn {
+    margin: 5px 0;
+    background-color: white;
+    color: #333;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-size: 20px;
+} .btn:hover {
+    background-color: rgb(206, 206, 206);
+}
+
+.error {
+    color: rgb(236, 0, 0);
+    font-weight: bolder;
+    display: none;
+}
+
+.result {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.result > * {
+    color: #333;
+    margin: 1rem;
+    padding: 1rem;
+    font-size: 1.8rem;
+
+}
